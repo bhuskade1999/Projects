@@ -9,7 +9,9 @@ router.post("/createUser",userController.createUser)
 
 router.post("/login",userController.login)
 
-router.post("/createCource",middleware.auth,middleware.authorise,courceController.createCource)
+router.post("/createCource",middleware.auth,courceController.createCource)
+
+router.get("/getCource",middleware.auth,courceController.getCource)
 
 router.put("/aproveCource",middleware.auth, courceController.aproveCource)
 

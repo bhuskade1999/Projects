@@ -19,12 +19,7 @@ const auth=async function(req,res,next){
 };
 
 
-const authorise = function(req, res, next) {
-    if(req.token !="Admin"){
-        return res.send({status:false,msg:"Only Admin can create cource"})
-    } 
-    next()
-}
+ 
 
 
 
@@ -33,4 +28,4 @@ const authorise = function(req, res, next) {
 
 
 
-module.exports={auth,authorise};
+module.exports={auth};

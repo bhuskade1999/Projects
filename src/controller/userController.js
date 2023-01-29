@@ -5,10 +5,6 @@ const validator = require("../validation/validator")
 const valid = require("validator")
 
 
-
-
-
-
 const createUser = async function(req,res){
  let data = req.body
  let {name,email,password,role} = data
